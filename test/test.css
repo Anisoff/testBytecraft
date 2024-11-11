@@ -1,0 +1,83 @@
+body{
+    background-color:hsl(55, 47%, 90%);
+    font-family: League Spartan;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    gap:30px;
+    align-items: center;
+}
+.profiles{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap:30px;
+    margin: 30px auto auto 0;
+}
+.one , .two{
+    color: hsl(300, 43%, 22%);
+}
+.container{
+    
+    background-color: white;
+    padding: 80px;
+}
+.rate1, .rate2, .rate3{
+    background-color: hsl(300, 24%, 96%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    
+} 
+.rate2{
+    margin-left: 40px;
+}
+.rate3{
+    margin-left: 80px;
+}
+.one{
+    line-height: 1.5;
+    width: 45%;
+}
+.two{
+    width: 45%;
+}
+.profile1,.profile2,.profile3{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    width: calc((100%/3)-60px);
+}
+.same{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+.image{
+    border-radius: 50px;
+}
+@media (min-width: 768px){
+    .two{
+        width: 270px;
+        position: absolute;
+        right: 160px;
+    }
+}
+@media (max-width: 768px) {
+    .one,  .first, .profiles {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Adjust columns for smaller screens */
+    }
+}
+@media (min-width: 992px){
+    .two{
+        width: 470px;
+        position: absolute;
+        right: 160px;
+    }
+}
